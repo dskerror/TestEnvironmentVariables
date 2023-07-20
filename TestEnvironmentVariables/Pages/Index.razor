@@ -1,0 +1,9 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inject IWebAssemblyHostEnvironment HostEnvironment
+@inject IConfiguration configuration;
+
+<PageTitle>Index</PageTitle>
+
+<p>Environment: @HostEnvironment.Environment</p>
+<p>API: @configuration["ApiUrl"]</p>
